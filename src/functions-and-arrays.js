@@ -1,5 +1,6 @@
 // Iteration #1: Find the maximum
 function maxOfTwoNumbers(n1, n2) {
+
   if (n1>n2) {
     return n1
   } else return n2;
@@ -21,7 +22,7 @@ function findLongestWord(array) {
 
   if (array.length === 0){
     return null;
-  } else {
+  } else {    
     for(let i=0; i<array.length; i++){
 
       if (mayor.length<array[i].length) {
@@ -54,7 +55,6 @@ let suma= 0;
 
 }
 console.log(sumNumbers(numbers));
-
 
 
 
@@ -180,7 +180,7 @@ return nuevoArray;
 
 }
 
-console.log(uniquifyArray([5,11, 6, 2, 13, 5, 99, 6, 88]));
+console.log(uniquifyArray(wordsUnique));
 
 
 
@@ -198,10 +198,10 @@ function doesWordExist(array, valor) {
   if (array.length === 0){
     return null;
   } else {
-    while (array.indexOf(valor) != -1){
-      return true;
+    while (array.indexOf(valor) === -1){
+      return false;
     } 
-    return false;
+    return true;
   }
 
 }
